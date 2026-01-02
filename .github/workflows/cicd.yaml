@@ -21,4 +21,8 @@ jobs:
           echo "Here is the CPU info:"
           grep -c ^processor /proc/cpuinfo
           echo "CPU cores: $(nproc)"
+          echo "Here is the process info:"
+          ps -aux
+          echo "check finished all is okay now"
+          
   
