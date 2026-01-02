@@ -1,0 +1,24 @@
+# ================= push request triggers for github actions ===================
+# ================= author: pengchao ma ======================
+
+# CICD name
+name: push request triggers for github actions
+on: push
+jobs:
+  check_runner_system_info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Step
+        run: echo "We are checking the runner info now..."
+      - name: Run multiple check result
+        run: |
+          echo "Here is the linux version info:"
+          uname -a
+          echo "Here is the storage info:"
+          df -TH
+          echo "Here is the memory info:"
+          free -h
+          echo "Here is the CPU info:"
+          grep -c ^processor /proc/cpuinfo
+          echo "CPU cores: $(nproc)"
+  
