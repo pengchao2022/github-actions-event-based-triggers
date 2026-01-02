@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - main
+      - develop
+      - 'release/**'
+      - stage
 jobs:
   check_runner_system_info:
     runs-on: ubuntu-latest
