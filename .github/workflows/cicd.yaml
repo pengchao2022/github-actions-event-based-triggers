@@ -52,7 +52,19 @@ jobs:
           echo "Here is my docker hub username: ${{ secrets.DOCKER_USERNAME}}"
           echo "Here is my docker hub password: ${{ secrets.DOCKER_PASSWORD}}"
 
-          
+  action-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+      
+      - name: Print index.html info
+        run: cat index.html
+
+        
+
+
+
 
 
           
