@@ -44,7 +44,15 @@ jobs:
         run: |
           echo "Good evening everyone, My name is: ${{ vars.MY_NAME }}"
           echo "My age is: ${{ vars.MY_AGE }}"
-          echo "My colleage is ${{ vars.MY_COLLEAGE }}"
+          echo "My colleage is: ${{ vars.MY_COLLEAGE }}"
+
+      # display the docker hub username and secret (just for test)
+      - name: Display the Docker hub username and password
+        run: |
+          echo "Here is my docker hub username: ${{ secrets.DOCKER_USERNAME}}"
+          echo "Here is my docker hub password: ${{ secrets.DOCKER_PASSWORD}}"
+
+          
 
 
           
