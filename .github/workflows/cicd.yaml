@@ -36,6 +36,7 @@ jobs:
           ps -aux
           echo "show the current path:"
           pwd
+          echo "this is just for stage function check"
           echo "check finished all is okay now"
           
 
