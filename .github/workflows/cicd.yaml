@@ -39,6 +39,13 @@ jobs:
           echo "show the current path:"
           pwd
           echo "check finished all is okay now"
+      # github actions 变量 variables 练习
+      - name: Check and Display Variables
+        run: |
+          echo "Good evening everyone, My name is: ${{ vars.MY_NAME }}"
+          echo "My age is: ${{ vars.MY_AGE }}"
+
+          
           
 
   
