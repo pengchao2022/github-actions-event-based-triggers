@@ -3,7 +3,10 @@
 
 # CICD name
 name: push request triggers for github actions
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   check_runner_system_info:
     runs-on: ubuntu-latest
@@ -23,6 +26,9 @@ jobs:
           echo "CPU cores: $(nproc)"
           echo "Here is the process info:"
           ps -aux
+          echo "show the current path:"
+          pwd
           echo "check finished all is okay now"
           
+
   
