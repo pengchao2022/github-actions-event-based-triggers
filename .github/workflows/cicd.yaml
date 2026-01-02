@@ -39,6 +39,7 @@ jobs:
           echo "show the current path:"
           pwd
           echo "check finished all is okay now"
+          echo "this is for allen test the feature/allen branch"
           
 
   
