@@ -44,8 +44,9 @@ jobs:
         run: |
           echo "Good evening everyone, My name is: ${{ vars.MY_NAME }}"
           echo "My age is: ${{ vars.MY_AGE }}"
+          echo "My colleage is ${{ vars.MY_COLLEAGE }}"
 
-          
+
           
 
   
