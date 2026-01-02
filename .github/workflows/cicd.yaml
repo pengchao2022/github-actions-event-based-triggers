@@ -12,6 +12,8 @@ on:
       - stage
 
   pull_request:
+    types:
+      - opened
     branches:
       - main
       
