@@ -10,6 +10,11 @@ on:
       - develop
       - 'release/**'
       - stage
+
+  pull_request:
+    branches:
+      - main
+      
 jobs:
   check_runner_system_info:
     runs-on: ubuntu-latest
